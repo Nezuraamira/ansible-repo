@@ -1,0 +1,9 @@
+- name: install
+  hosts: server
+  become: yes
+  tasks:
+    - name: speed
+      apt:
+        name: speedtest-cli
+        state: present
+        update_cache: yes
