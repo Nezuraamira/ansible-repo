@@ -1,2 +1,8 @@
 [targetserver]
-192.172.172.19 ansible_user=vascomm ansible_ssh_private_key_file=~/.ssh/semaphore-key ansible_python_interpreter=/usr/bin/python3
+192.172.172.19
+
+[targetserver:vars]
+ansible_user=vascomm
+ansible_port=22
+ansible_become=true
+ansible_become_method=sudo
