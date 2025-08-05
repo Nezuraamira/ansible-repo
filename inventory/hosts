@@ -1,8 +1,0 @@
-[targetserver]
-192.172.172.19
-
-[targetserver:vars]
-ansible_user=vascomm
-ansible_port=22
-ansible_become=true
-ansible_become_method=sudo
