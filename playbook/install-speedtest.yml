@@ -1,5 +1,5 @@
 - name: install
-  hosts: server
+  hosts: targetserver
   become: yes
   tasks:
     - name: speed
